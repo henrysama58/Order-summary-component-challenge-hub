@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
-  
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="info-container">
-  <div class="info-card">
-    <div class="info-card-content">
-      <p>asd</p>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-content">
+        <img class="hero-img" src="/order-summary-component-main/images/illustration-hero.svg" alt="Illustration Hero">
+        <h2 class="title">Order Summary</h2>
+        <p class="description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere
+          you like!</p>
+        <div class="plan-container">
+          <div class="left-side">
+            <img class="plan-img" src="/order-summary-component-main/images/icon-music.svg" alt="Music Icon">
+            <div class="plan-content">
+              <p class="plan-text-top">Annual Plan</p>
+              <p class="plan-text-bottom">$59.99/year</p>
+            </div>
+          </div>
+          <p class="plan-button-content">Change</p>
+        </div>
+        <div class="payment-buttons">
+          <div class="proceed-button">
+            <p class="proceed-button-content">Proceed to Payment</p>
+          </div>
+          <div class="cancel-button">
+            <p class="cancel-button-content">Cancel Order</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  
-  
 </body>
+
 </html>

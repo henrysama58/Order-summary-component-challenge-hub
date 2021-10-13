@@ -8,12 +8,6 @@
     box-sizing: border-box;
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
 body {
     background-image: url(/order-summary-component-main/images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
@@ -24,7 +18,6 @@ body {
 p {
     font-size: 16px;
 }
-
 .attribution { 
     font-size: 11px; text-align: center; 
 }
@@ -33,22 +26,175 @@ p {
     color: hsl(228, 45%, 44%);
 } 
 
-/* INFO CARD */
-.info-container {
+/* CARD */
+.card {
+    margin: 100px;
+}
+.card-content {
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.info-card {
-    display: flex;
+    width: 450px;
     background-color: white;
-    height: 500px;
-    width: 400px;
-    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 12px 64px hsl(224, 23%, 55%);
 }
 
-.info-card-content {
+.title {
+    margin-bottom: 16px;
+    font-weight: 900;
+}
+.description {
+    text-align: center;
+    width: 300px;
+    margin-bottom: 32px;
+    color: hsl(224, 23%, 55%);
+}
+
+.hero-img {
+    margin-bottom: 32px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Subscription info */
+.plan-container {
     display: flex;
     align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    width: 360px;
+    padding: 24px;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+.plan-img {
+    margin-right: 20px;
+}
+
+.plan-text-top {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.plan-text-bottom {
+    color: hsl(224, 23%, 55%);
+}
+.left-side {
+    display: flex;
+}
+
+.plan-button-content {
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.plan-button-content:hover {
+    color: hsl(245, 73%, 64%);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* PAYMENT BUTTONS */
+.proceed-button {
+    padding: 16px;
+    margin: 32px;
+    width: 360px;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgb(189, 184, 184);
+    transition: 0.3s;
+}
+
+.proceed-button:hover {
+    background-color: hsl(245, 73%, 64%);
+    cursor: pointer;
+}
+
+.proceed-button-content {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.cancel-button {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.cancel-button-content {
+    text-align: center;
+    font-weight: 900;
+    color: gray;
+    transition: 0.3s;
+}
+
+.cancel-button-content:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* WIDTH 375PX */
+@media (max-width: 375px) {
+    body {
+        background-image: url(/order-summary-component-main/images/pattern-background-mobile.svg);
+    }
+
+    .description {
+        width: 275px;
+        line-height: 1.5;
+    }
+    .card-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-content {
+        width: 320px;
+        align-items: center;
+    }
+
+    .hero-img {
+        width: 320px;
+    }
+    
+    .plan-container {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 280px;
+    }
+
+    .plan-button-content {
+        font-size: 14px;
+    }
+
+    .payment-buttons {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .proceed-button {
+        padding: 20px;
+        margin: 24px;
+        display: flex;
+        justify-content: center;
+        width: 280px;
+        height: 52px;
+    }
+    
+    .proceed-button-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
