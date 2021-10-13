@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://henrysama58.github.io/Order-summary-component-challenge-hub/)
+- Live Site URL: [CLICK HERE](https://henrysama58.github.io/Order-summary-component-challenge-hub/)
 
 ## My process
 
